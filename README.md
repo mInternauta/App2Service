@@ -14,8 +14,8 @@ Turn any application in Windows Service  lin 2 clicks
   </ServiceSet>`
 
 Keys
-| Key | Description |
-| ---- | ------------- |
+| Key | Description                                                                                                                                                                                                   |
+| ----------------------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Name | Name of the service |
 | Executable | Path to the executable |
 | Parameters | Arguments to the application separated by space |

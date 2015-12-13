@@ -5,24 +5,13 @@ Turn any application in Windows Service  lin 2 clicks
 
 ## Configuration
 
-`<ArrayOfServiceSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-  <ServiceSet>
-    <Name>MyName</Name>
-    <Executable>MyTest.exe</Executable>
-    <Parameters>1 2</Parameters>
-    <StopWithService>false</StopWithService>
-    <RedirectStandardOutput>false</RedirectStandardOutput>
-  </ServiceSet>
-  
-    <ServiceSet>
+` <ServiceSet>
     <Name>MyName 2 </Name>
     <Executable>MyTest2.exe</Executable>
     <Parameters></Parameters>
     <StopWithService>true</StopWithService>
     <RedirectStandardOutput>true</RedirectStandardOutput>
-  </ServiceSet>
-</ArrayOfServiceSet>`
+  </ServiceSet>`
 
 Keys
 | Key | Description |

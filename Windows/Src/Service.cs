@@ -28,24 +28,16 @@ namespace App2Service
 
         private void _StartServices()
         {
+            Program.Services = new List<AppService>();
             Trace.WriteLine("Starting the Services.." + Program.ConfiguredServices.Count);
 
             foreach (ServiceSet service in Program.ConfiguredServices)
             {
-                Trace.WriteLine("[" + service.Name + "] Starting...");
-
                 try
                 {
-                    if (string.IsNullOrEmpty(service.Parameters))
-                    {
-                        Process.Start(service.Executable);
-                    }
-                    else
-                    {
-                        Process.Start(service.Executable, service.Parameters);
-                    }
-
-                    Trace.WriteLine("[" + service.Name + "] Started");
+                    AppService appService = new AppService(service);
+                    Program.Services.Add(appService);
+                    appService.Start();
                 }
                 catch (Exception exp)
                 {
@@ -57,6 +49,20 @@ namespace App2Service
 
         protected override void OnStop()
         {
+            Trace.WriteLine("Stopping the Services.." + Program.Services.Count);
+
+            foreach (var item in Program.Services)
+            {
+                try
+                {
+                    item.Stop();
+                }
+                catch (Exception exp)
+                {
+                    Trace.WriteLine("[" + item.Name + "] Error when stop: ");
+                    Trace.WriteLine(exp);
+                }
+            }
         }
     }
 }

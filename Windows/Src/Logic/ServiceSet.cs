@@ -25,5 +25,15 @@ namespace App2Service.Logic
         /// Parameters
         /// </summary>
         public string Parameters { get; set; }
+
+        /// <summary>
+        /// Attempt to close the process when the service stop
+        /// </summary>
+        public bool StopWithService { get; set; }
+
+        /// <summary>
+        /// Try to redirect the standard output
+        /// </summary>
+        public bool RedirectStandardOutput { get; set; }
     }
 }

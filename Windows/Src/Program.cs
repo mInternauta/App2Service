@@ -14,6 +14,7 @@ namespace App2Service
 {
     static class Program
     {
+        public static List<AppService> Services;
         public static List<ServiceSet> ConfiguredServices { get; private set; }
         public static Thread StartThread { get; internal set; }
 

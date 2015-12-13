@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\AppService.cs" />
     <Compile Include="Logic\ServiceConfigs.cs" />
     <Compile Include="Logic\ServiceSet.cs" />
+    <Compile Include="Logic\Win32Utils.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>

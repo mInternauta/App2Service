@@ -5,13 +5,13 @@ Turn any application in Windows Service  lin 2 clicks
 
 ## Configuration
 
-` <ServiceSet>
-    <Name>MyName 2 </Name>
-    <Executable>MyTest2.exe</Executable>
-    <Parameters></Parameters>
-    <StopWithService>true</StopWithService>
-    <RedirectStandardOutput>true</RedirectStandardOutput>
-  </ServiceSet>`
+<ServiceSet>
+	<Name>MyName 2 </Name>
+	<Executable>MyTest2.exe</Executable>
+	<Parameters></Parameters>
+	<StopWithService>true</StopWithService>
+	<RedirectStandardOutput>true</RedirectStandardOutput>
+</ServiceSet>
 
 Keys
 | Key | Description                                                                                                                                                                                                   |

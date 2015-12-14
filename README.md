@@ -1,10 +1,11 @@
 # App2Service
-Turn any application in Windows Service  lin 2 clicks
+Turn any application in Windows Service  in 2 clicks
 
 ----------
 
 ## Configuration
 
+Services.cfg
 
 `<ServiceSet>`
 

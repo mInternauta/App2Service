@@ -12,7 +12,7 @@ namespace App2Service.Logic
         {
             List<ServiceSet> services = new List<ServiceSet>();
             string cfgFile = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Services.cfg");
-            XmlSerializer xml = new XmlSerializer(services.GetType());
+            XmlSerializer xml = new XmlSerializer(services.GetType(), new XmlRootAttribute("Services"));
 
             if(File.Exists(cfgFile))
             {

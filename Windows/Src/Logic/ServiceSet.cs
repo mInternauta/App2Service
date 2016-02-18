@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace App2Service.Logic
 {
     /// <summary>
     /// A Defined Service
     /// </summary>
+    [XmlRoot("Service")]
     public class ServiceSet 
     {
         /// <summary>

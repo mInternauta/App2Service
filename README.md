@@ -7,19 +7,16 @@ Turn any application in Windows Service  in 2 clicks
 
 Services.cfg
 
-`<ServiceSet>`
-
-`	<Name>MyName 2</Name>`
-
-`	<Executable>MyTest2.exe</Executable>`
-
-`	<Parameters></Parameters>`
-
-`	<StopWithService>true</StopWithService>`
-
-`	<RedirectStandardOutput>true</RedirectStandardOutput>`
-
-`</ServiceSet>`
+`<?xml version="1.0" encoding="UTF-8"?>
+`<Services>
+`	<ServiceSet>
+`		<Name>My App</Name>
+`		<Executable>java.exe</Executable>
+`		<Parameters>-jar my.jar</Parameters>
+`		<StopWithService>true</StopWithService>
+`		<RedirectStandardOutput>true</RedirectStandardOutput>
+`	</ServiceSet>
+`</Services>
 
 Name: Name of the service 
 
